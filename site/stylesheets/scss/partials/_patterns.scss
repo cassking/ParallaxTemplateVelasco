@@ -1,0 +1,91 @@
+.pattern-ico { 
+	position: absolute;
+	top: 0;
+	left:0;
+	display: block;
+	width: 20px;
+	height: 20px;
+ 	background:  url("../../img/sprites.png") 0 0 no-repeat;
+ 	overflow: hidden;
+
+ 	&.ico--arrowup { 
+ 		top: 80px;
+ 		width: 50px;
+ 		height: 50px;
+	 	background:  url("../../img/sprites.png") -15px -58px no-repeat;
+	 	opacity:1;
+	 		&:hover {
+	 		opacity:0.3;
+ 		}
+	}
+ 	 &.ico--arrowdown {
+		top: 0;
+		left: 0;
+ 	 	width: 50px;
+ 		height: 50px;
+ 		background:  url("../../img/sprites.png") -15px 7px no-repeat;
+ 		opacity:1;
+ 			&.ico--arrowdown--white {
+ 				background:  url("../../img/sprites.png") -104px 7px no-repeat;
+ 			}
+	 		&:hover {
+	 		opacity:0.3;
+ 		}
+ 	}
+ 
+ 	 &.ico--swirl {
+ 	 	position: relative;
+	 	height: 240px;
+		width: 335px;
+		opacity: 0.1;
+		z-index:500;
+	 	background:  url("../../img/sprites.png") 0 -220px no-repeat;
+		-webkit-animation: waves 5s ease-in-out infinite; 
+		-webkit-animation: spin 95s ease-in-out infinite;
+		-moz-animation: waves 5s ease-in-out infinite; 
+		-moz-animation: spin 95s ease-in-out infinite;
+		-o-animation: waves 5s ease-in-out infinite; 
+		-o-animation: spin 95s ease-in-out infinite;
+		animation: waves 5s ease-in-out infinite; 
+		animation: spin 95s ease-in-out infinite;
+	 		&.ico--swirl--alt {
+		 		top: 430px;
+				left: 900px;
+	 			background:  url("../../img/sprites.png") 0 -450px no-repeat;
+	 			opacity:0.1;
+ 		}
+ 	}
+ 	&.ico--circle {
+		top: 0px;
+		left: 0px;
+		width: 166px;
+		height:176px;
+		background:  url("../../img/circle-ico.png") 0 0 no-repeat;
+			&.ico--circle--alt {
+				background:  url("../../img/circle-ico-dark.png") 0 0 no-repeat;
+				
+			}
+
+ 	}
+}
+
+/*Use this pattern if using absolutely positioned spans or divs and add your own positoning*/
+.author {
+	position: absolute;
+	top:0;
+	left:0;
+    width: 344px;
+    height: 350px;
+    z-index: 30;
+    background: transparent url("../../img/NormaCircle.png") no-repeat;
+
+	&.author--alt1 {} 
+	&.author--alt2 {} 
+	&.author--alt3 {} 
+	&.author--alt4 {} 
+	&.author--alt5 {} 
+	&.author--alt6 {} 
+	&.author--alt7 {} 
+	&.author--alt8 {} 
+
+}

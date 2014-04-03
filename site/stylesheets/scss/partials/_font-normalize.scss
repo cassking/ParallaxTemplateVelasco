@@ -1,0 +1,9 @@
+/*
+fonts.css from the YUI Library: developer.yahoo.com/yui/
+Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+
+Included to get rid of rendering inconsistencies that can occur between browsers and OS’s when rendering fonts in pixels, this snippet allows you to size your fonts in such a way that the size and line-height will remain consistent across these platforms for your website. 
+*/
+body { font:13px sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
+table { font-size:inherit; font:100%; }
+select, input, textarea { font:99% sans-serif; }

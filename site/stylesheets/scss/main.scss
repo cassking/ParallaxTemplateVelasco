@@ -1,0 +1,458 @@
+//Imports
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/patterns";
+@import "partials/animations";
+@import url("../../fonts/fonts.css");
+@import "partials/print";
+
+/*
+    
+    Norma Velasco Parallax v1.0
+    Author: Casssandra King, @ca55king, cassandraking.net
+    TYPOGRAPHY --------
+    Fonts from Goolge = 'Oswald-Regular', 'Oswald-Light' 'Arvo-Regular', GoudyBookletter1911', 'Wellfleet-Regular'
+    IMAGES  --------
+    Original artwork Norma Velasco, these are derivatives
+*/
+
+/* ==========================================================================
+  Some items from HTML5 Boilerplate to improve performance
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Mac only, maxvoltar.com/archive/-webkit-font-smoothing */
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: 'Oswald-Light', sans-serif;
+    font: 100%;
+}
+/* apply a natural box layout model to all elements, via Paul Irish */
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Better screenreader Access*/
+
+a:hover,
+a:active {
+    outline: none;
+}
+a,
+a:active,
+a:visited {
+    color: $greydarkest;
+}
+a:hover {
+    color: $greydark;
+}
+/* IE7 Helper bicubic resizing for non-native sized IMG:
+code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+
+.ie7 img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/* ==========================================================================
+  Custom CSS :: Add or Change any additional styles here if you wish
+   ========================================================================== */
+
+#main {
+    @extend %center-content; 
+    width: 100%;
+    background: $white;
+    text-align: center; 
+    @extend %clearfix;
+        
+}
+
+header[role="banner"] {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height:70px;
+    background-color: $greylight;
+  @include boxshadow-lightest;
+    z-index: 1000;
+    .logo {
+        h1 {
+        }
+        a {
+            img {}
+            span {}
+            .txt {
+                @extend %hide-text;
+            }
+        }  
+    }
+ 
+}
+
+nav[role="navigation"] {
+    margin-top:08px;
+    .navigation {
+        float: right;
+        @extend %clearfix;
+        li {
+            display: block;
+            margin: 0 10px;
+            padding: 3px;
+            float: left;
+            background-color: $greylight;
+            @include circlemedium;
+            @include boxshadow-lightest;
+            a {
+                display:inline-block;
+                padding: 5px;
+                text-transform: uppercase;
+                opacity: 1.0;
+                z-index: 1100;
+                    &:hover,
+                    &:active {
+                    opacity: 1.5;
+                }
+            }
+        }
+
+    }
+}
+section[role="region"]{
+    position: relative; /*this is new*/
+    @extend %center-content;
+    @extend %clearfix;
+        header {
+            width: auto;
+        }
+
+}
+article[role="article"]{
+    position: absolute; 
+    @extend %clearfix;
+    a {
+        position: relative;
+    }
+}
+.content {
+    background: transparent;
+    @extend %clearfix;
+}
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family:"Arvo";
+    font-size: 2em;
+    font-weight:normal;
+    text-align: center;
+    color: #fff;  
+}
+h1 {
+    color: $greydarkest;
+    font-size: 1.9em;
+}
+h2 {
+    font-size:1.5em;
+    color: $greydark;
+}
+h3 {
+    font-family:"Oswald-Regular", sans-serif;
+    font-size:1.2em;
+}
+h4 {
+    color: $greydark;
+    font-family:"Wellfleet", serif;
+    font-size: 1.2em;
+}
+
+p {
+    @extend %center-content;
+    padding: 18px;
+    font-family:"GoudyBookletter", serif;
+    font-size: 152%;
+    line-height: 1.5;
+    color: $greydarkest;
+}
+
+
+//Slides
+.slide {
+    width: 100%;
+    height: 800px;
+    @extend %center-content;
+    @extend %clearfix;
+    @include boxshadow-lightest;
+} 
+#slide1 {
+    background:  url("../../img/slide7.jpg") 50% 0  repeat fixed;
+    /*Responsive bg image*/
+    background-size: cover;
+
+}
+#slide2,  #slide4, #slide6, #slide8, #slide10 {
+    background-color: #ffffff;
+   /*  z-index: 10;*/
+}
+#slide3 {
+    background:  url("../../img/slide1.jpg") 50% 0 repeat fixed;
+    /*Responsive bg image*/
+    background-size: cover;
+
+}
+#slide5 {
+    background:  url("../../img/slide2.jpg") 50% 0 no-repeat fixed;
+    /*Responsive bg image*/
+    background-size: cover;
+
+
+}
+#slide7 {
+    background:  url("../../img/slide3.jpg") 50% 0 no-repeat fixed;
+    /*Responsive bg image*/
+    background-size: cover;
+
+}
+#slide9 {
+    background:  url("../../img/slide4.jpg") 50% 0 no-repeat fixed;
+    /*Responsive bg image*/
+    background-size: cover;
+
+}
+#slide11 {
+    background:  url("../../img/slide5.jpg") 50% 800px no-repeat fixed;
+    /*Responsive bg image*/
+    background-size: cover;
+
+     &.ico--circle:last {
+        display: none;
+    }
+
+}
+
+.intro, .story {
+    position: absolute;
+    @extend %center-content;
+    top: 140px;
+    width: 100%;
+    height:490px;
+    background: url("../../img/intro-shadow.png")  no-repeat scroll center top;
+    a {
+        display: inline-block;
+    }
+}
+.intro {
+    p {
+        width: 40%;
+        min-width: 410px;
+        max-width: 450px;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 116%;
+        line-height: 1.6;
+    }
+    h2 {
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    h3 {
+    padding-bottom: 10px;
+    }
+    .ico--arrowdown {
+        left: -26px;
+    }
+}
+
+// Slides with background images
+.story {
+    background-image: none;
+    p {
+        width: 40%;
+        min-width: 400px;
+      /*  border-top: 1px solid $greylight;*/
+        @include mediumborderradius;
+        background: $white;
+        @extend %center-content;
+       
+    }
+    h3, h4 {
+        @extend %center-content;
+        width: 40%;
+        min-width: 400px;
+        padding: 18px;
+    }
+    h3 {
+           color: white;
+              @include outlinetext;
+    }
+    h2 {
+        color: $white;
+        position: absolute;
+        margin-left: 130px;
+        margin-top: 200px;
+        float: left;
+        font-size: 4.0em;
+        @include rotatetext;
+        opacity: 0.4;
+        z-index: 1;
+        }
+    h4 {
+       color: $white;
+         @include outlinetext;
+    }
+    .ico--arrowdown {
+     top: 60px;
+    }
+    .ico--circle {
+        left: -65px;
+        opacity: 0.3;
+    }
+//Slides with white background
+    &.story--alt {
+        h2 {
+            color: $greydark;
+            opacity: 0.2;  
+        }
+        h3 {
+            color: $greydarkest;
+          text-shadow: none;
+        }
+        h4 {
+            color: $greydark;
+            opacity: 1.0;
+            text-shadow: none;
+
+        }
+    }
+}
+
+//Authors
+.author--alt1 {
+    background: transparent url("../../img/NormaCircleTwirl.png") no-repeat;
+}
+.author--alt2 {
+    background: transparent url("../../img/NormaCircleCass.png") no-repeat;
+}
+.author--alt3 {
+    background: transparent url("../../img/NormaCircleCrowd.png") no-repeat;
+}
+.author--alt4 {
+    background: transparent url("../../img/NormaCircleFace.png") no-repeat;
+}
+.author--alt5 {
+
+    background: transparent url("../../img/NormaCircleNYU.png") no-repeat;
+}
+.author--alt6 {
+    background: transparent url("../../img/NormaCircleTeen.png") no-repeat;
+}
+.author--alt7 {
+    background: transparent url("../../img/NormaTonyCircle.png") no-repeat;
+}
+.author--alt8 {
+    background: transparent url("../../img/NormaCircleNYU.png") no-repeat;
+}
+
+
+footer[role="contentinfo"] {
+     @extend %center-content;
+    /*  background: transparent url("../../img/circle-ico.png") 0 -90px;*/
+  /* -webkit-animation: waves 5s ease-in-out infinite;*/
+
+     div {
+        position: relative;
+         @extend %clearfix; 
+        /* -webkit-animation: waves-linear 4s linear infinite;*/
+    ul {
+        position: relative;
+        display: inline-block;
+        @extend %center-content;
+        @extend %clearfix;
+        li {
+            display: inline-block;
+            padding: 5px;
+            float: left;
+            a{
+                text-transform: uppercase;
+            }
+    }
+     }
+   
+}
+}
+
+//Parallax foreground and midground images
+//Swirls
+#parallax-bg1 {
+    z-index: 1;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    margin-left: -600px; /* move left by half element's width */
+}
+#bg1-1 {
+    position: absolute;
+    top: 85px;
+    left: -270px;
+}
+#bg1-2 {
+    position: absolute;
+    top: 440px;
+    left: 995px;
+}
+#bg1-3 {
+    display:none;
+    position: absolute;
+    top: 900px;
+    left: -220px;
+}
+#bg1-4 {
+    position: absolute;
+    top: 1020px;
+    left: 850px;
+}
+
+
+//Author Circles
+#parallax-bg2 {
+    z-index: 20;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    margin-left: -600px; /* move left by half element's width */
+}
+#bg2-1 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+#bg2-2 {
+    position: absolute;
+    top: 850px;
+    left: 850px;
+}
+#bg2-3 {
+    position: absolute;
+    top: 1750px;
+    left: 20px;
+}
+#bg2-4 {
+    position: absolute;
+    top: 2500px;
+    left: 850px;
+}
+#bg2-5 {
+    position: absolute;
+    top: 3300px;
+    left: 20px;
+}

@@ -1,0 +1,676 @@
+/*   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark  html5doctor.com/html-5-reset-stylesheet/*/
+@import url("../../fonts/fonts.css");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+nav ul, footer ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* END RESET CSS */
+/* align checkboxes, radios, text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+  *vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer; }
+
+header[role="banner"] .logo a .txt {
+  overflow: hidden;
+  text-indent: -9999px;
+  display: block; }
+
+#main:after, nav[role="navigation"] .navigation:after, section[role="region"]:after, article[role="article"]:after, .content:after, .slide:after, footer[role="contentinfo"] div:after, footer[role="contentinfo"] div ul:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#main, section[role="region"], p, .slide, .intro, .story, .story p, .story h3, .story h4, footer[role="contentinfo"], footer[role="contentinfo"] div ul {
+  display: block;
+  margin: 0 auto; }
+
+.pattern-ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/sprites.png") 0 0 no-repeat;
+  overflow: hidden; }
+  .pattern-ico.ico--arrowup {
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    background: url("../../img/sprites.png") -15px -58px no-repeat;
+    opacity: 1; }
+    .pattern-ico.ico--arrowup:hover {
+      opacity: 0.3; }
+  .pattern-ico.ico--arrowdown {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url("../../img/sprites.png") -15px 7px no-repeat;
+    opacity: 1; }
+    .pattern-ico.ico--arrowdown.ico--arrowdown--white {
+      background: url("../../img/sprites.png") -104px 7px no-repeat; }
+    .pattern-ico.ico--arrowdown:hover {
+      opacity: 0.3; }
+  .pattern-ico.ico--swirl {
+    position: relative;
+    height: 240px;
+    width: 335px;
+    opacity: 0.1;
+    z-index: 500;
+    background: url("../../img/sprites.png") 0 -220px no-repeat;
+    -webkit-animation: waves 5s ease-in-out infinite;
+    -webkit-animation: spin 95s ease-in-out infinite;
+    -moz-animation: waves 5s ease-in-out infinite;
+    -moz-animation: spin 95s ease-in-out infinite;
+    -o-animation: waves 5s ease-in-out infinite;
+    -o-animation: spin 95s ease-in-out infinite;
+    animation: waves 5s ease-in-out infinite;
+    animation: spin 95s ease-in-out infinite; }
+    .pattern-ico.ico--swirl.ico--swirl--alt {
+      top: 430px;
+      left: 900px;
+      background: url("../../img/sprites.png") 0 -450px no-repeat;
+      opacity: 0.1; }
+  .pattern-ico.ico--circle {
+    top: 0px;
+    left: 0px;
+    width: 166px;
+    height: 176px;
+    background: url("../../img/circle-ico.png") 0 0 no-repeat; }
+    .pattern-ico.ico--circle.ico--circle--alt {
+      background: url("../../img/circle-ico-dark.png") 0 0 no-repeat; }
+
+/*Use this pattern if using absolutely positioned spans or divs and add your own positoning*/
+.author {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 344px;
+  height: 350px;
+  z-index: 30;
+  background: transparent url("../../img/NormaCircle.png") no-repeat; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(-180deg); }
+
+  25% {
+    -webkit-transform: rotate(360deg); }
+
+  50% {
+    -webkit-transform: rotate(-90deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(-180deg); }
+
+  25% {
+    -moz-transform: rotate(360deg); }
+
+  50% {
+    -moz-transform: rotate(-90deg); }
+
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(-180deg); }
+
+  25% {
+    -o-transform: rotate(360deg); }
+
+  50% {
+    -o-transform: rotate(-90deg); }
+
+  100% {
+    -o-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(-180deg); }
+
+  25% {
+    transform: rotate(360deg); }
+
+  50% {
+    transform: rotate(-90deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0% 0%; }
+
+  to {
+    background-position: 100% 0%; } }
+
+@-moz-keyframes animatedBackground {
+  from {
+    background-position: 0% 0%; }
+
+  to {
+    background-position: 100% 0%; } }
+
+@-o-keyframes animatedBackground {
+  from {
+    background-position: 0% 0%; }
+
+  to {
+    background-position: 100% 0%; } }
+
+/*@-webkit-keyframes waves-linear
+@-moz-keyframes waves-linear*/
+@-o-keyframes waves-linear {
+  100% {
+    -webkit-transform: translate3d(-56px, 0px, 0px); } }
+
+/*@-webkit-keyframes waves
+@-moz-keyframes waves*/
+@-o-keyframes waves {
+  50% {
+    -webkit-transform: translate3d(0px, 10px, 0px); } }
+
+/*
+* print styles
+* inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/
+*/
+/* ==========================================================================
+  Print Styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none; }
+
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  a:after {
+    content: " (" attr(href) ")"; }
+
+  abbr:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after {
+    content: ""; }
+
+  /* Don't show links for images */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  img {
+    page-break-inside: avoid; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/*
+    
+    Norma Velasco Parallax v1.0
+    Author: Casssandra King, @ca55king, cassandraking.net
+    TYPOGRAPHY --------
+    Fonts from Goolge = 'Oswald-Regular', 'Oswald-Light' 'Arvo-Regular', GoudyBookletter1911', 'Wellfleet-Regular'
+    IMAGES  --------
+    Original artwork Norma Velasco, these are derivatives
+*/
+/* ==========================================================================
+  Some items from HTML5 Boilerplate to improve performance
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Mac only, maxvoltar.com/archive/-webkit-font-smoothing */
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Oswald-Light', sans-serif;
+  font: 100%; }
+
+/* apply a natural box layout model to all elements, via Paul Irish */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Better screenreader Access*/
+a:hover,
+a:active {
+  outline: none; }
+
+a,
+a:active,
+a:visited {
+  color: #333333; }
+
+a:hover {
+  color: #94a4a4; }
+
+/* IE7 Helper bicubic resizing for non-native sized IMG:
+code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* ==========================================================================
+  Custom CSS :: Add or Change any additional styles here if you wish
+   ========================================================================== */
+#main {
+  width: 100%;
+  background: white;
+  text-align: center; }
+
+header[role="banner"] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #f1efef;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1000; }
+
+nav[role="navigation"] {
+  margin-top: 08px; }
+  nav[role="navigation"] .navigation {
+    float: right; }
+    nav[role="navigation"] .navigation li {
+      display: block;
+      margin: 0 10px;
+      padding: 3px;
+      float: left;
+      background-color: #f1efef;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      -o-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3); }
+      nav[role="navigation"] .navigation li a {
+        display: inline-block;
+        padding: 5px;
+        text-transform: uppercase;
+        opacity: 1.0;
+        z-index: 1100; }
+        nav[role="navigation"] .navigation li a:hover, nav[role="navigation"] .navigation li a:active {
+          opacity: 1.5; }
+
+section[role="region"] {
+  position: relative;
+  /*this is new*/ }
+  section[role="region"] header {
+    width: auto; }
+
+article[role="article"] {
+  position: absolute; }
+  article[role="article"] a {
+    position: relative; }
+
+.content {
+  background: transparent; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Arvo";
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+  color: #fff; }
+
+h1 {
+  color: #333333;
+  font-size: 1.9em; }
+
+h2 {
+  font-size: 1.5em;
+  color: #94a4a4; }
+
+h3 {
+  font-family: "Oswald-Regular", sans-serif;
+  font-size: 1.2em; }
+
+h4 {
+  color: #94a4a4;
+  font-family: "Wellfleet", serif;
+  font-size: 1.2em; }
+
+p {
+  padding: 18px;
+  font-family: "GoudyBookletter", serif;
+  font-size: 152%;
+  line-height: 1.5;
+  color: #333333; }
+
+.slide {
+  width: 100%;
+  height: 800px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3); }
+
+#slide1 {
+  background: url("../../img/slide7.jpg") 50% 0 repeat fixed;
+  /*Responsive bg image*/
+  background-size: cover; }
+
+#slide2, #slide4, #slide6, #slide8, #slide10 {
+  background-color: #ffffff;
+  /*  z-index: 10;*/ }
+
+#slide3 {
+  background: url("../../img/slide1.jpg") 50% 0 repeat fixed;
+  /*Responsive bg image*/
+  background-size: cover; }
+
+#slide5 {
+  background: url("../../img/slide2.jpg") 50% 0 no-repeat fixed;
+  /*Responsive bg image*/
+  background-size: cover; }
+
+#slide7 {
+  background: url("../../img/slide3.jpg") 50% 0 no-repeat fixed;
+  /*Responsive bg image*/
+  background-size: cover; }
+
+#slide9 {
+  background: url("../../img/slide4.jpg") 50% 0 no-repeat fixed;
+  /*Responsive bg image*/
+  background-size: cover; }
+
+#slide11 {
+  background: url("../../img/slide5.jpg") 50% 800px no-repeat fixed;
+  /*Responsive bg image*/
+  background-size: cover; }
+  #slide11.ico--circle:last {
+    display: none; }
+
+.intro, .story {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 490px;
+  background: url("../../img/intro-shadow.png") no-repeat scroll center top; }
+  .intro a, .story a {
+    display: inline-block; }
+
+.intro p {
+  width: 40%;
+  min-width: 410px;
+  max-width: 450px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 116%;
+  line-height: 1.6; }
+.intro h2 {
+  padding-top: 25px;
+  padding-bottom: 10px; }
+.intro h3 {
+  padding-bottom: 10px; }
+.intro .ico--arrowdown {
+  left: -26px; }
+
+.story {
+  background-image: none; }
+  .story p {
+    width: 40%;
+    min-width: 400px;
+    /*  border-top: 1px solid $greylight;*/
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    background: white; }
+  .story h3, .story h4 {
+    width: 40%;
+    min-width: 400px;
+    padding: 18px; }
+  .story h3 {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .story h2 {
+    color: white;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 200px;
+    float: left;
+    font-size: 4.0em;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0.4;
+    z-index: 1; }
+  .story h4 {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .story .ico--arrowdown {
+    top: 60px; }
+  .story .ico--circle {
+    left: -65px;
+    opacity: 0.3; }
+  .story.story--alt h2 {
+    color: #94a4a4;
+    opacity: 0.2; }
+  .story.story--alt h3 {
+    color: #333333;
+    text-shadow: none; }
+  .story.story--alt h4 {
+    color: #94a4a4;
+    opacity: 1.0;
+    text-shadow: none; }
+
+.author--alt1 {
+  background: transparent url("../../img/NormaCircleTwirl.png") no-repeat; }
+
+.author--alt2 {
+  background: transparent url("../../img/NormaCircleCass.png") no-repeat; }
+
+.author--alt3 {
+  background: transparent url("../../img/NormaCircleCrowd.png") no-repeat; }
+
+.author--alt4 {
+  background: transparent url("../../img/NormaCircleFace.png") no-repeat; }
+
+.author--alt5 {
+  background: transparent url("../../img/NormaCircleNYU.png") no-repeat; }
+
+.author--alt6 {
+  background: transparent url("../../img/NormaCircleTeen.png") no-repeat; }
+
+.author--alt7 {
+  background: transparent url("../../img/NormaTonyCircle.png") no-repeat; }
+
+.author--alt8 {
+  background: transparent url("../../img/NormaCircleNYU.png") no-repeat; }
+
+footer[role="contentinfo"] {
+  /*  background: transparent url("../../img/circle-ico.png") 0 -90px;*/
+  /* -webkit-animation: waves 5s ease-in-out infinite;*/ }
+  footer[role="contentinfo"] div {
+    position: relative;
+    /* -webkit-animation: waves-linear 4s linear infinite;*/ }
+    footer[role="contentinfo"] div ul {
+      position: relative;
+      display: inline-block; }
+      footer[role="contentinfo"] div ul li {
+        display: inline-block;
+        padding: 5px;
+        float: left; }
+        footer[role="contentinfo"] div ul li a {
+          text-transform: uppercase; }
+
+#parallax-bg1 {
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -600px;
+  /* move left by half element's width */ }
+
+#bg1-1 {
+  position: absolute;
+  top: 85px;
+  left: -270px; }
+
+#bg1-2 {
+  position: absolute;
+  top: 440px;
+  left: 995px; }
+
+#bg1-3 {
+  display: none;
+  position: absolute;
+  top: 900px;
+  left: -220px; }
+
+#bg1-4 {
+  position: absolute;
+  top: 1020px;
+  left: 850px; }
+
+#parallax-bg2 {
+  z-index: 20;
+  position: fixed;
+  left: 50%;
+  /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -600px;
+  /* move left by half element's width */ }
+
+#bg2-1 {
+  position: absolute;
+  top: 150px;
+  left: 20px; }
+
+#bg2-2 {
+  position: absolute;
+  top: 850px;
+  left: 850px; }
+
+#bg2-3 {
+  position: absolute;
+  top: 1750px;
+  left: 20px; }
+
+#bg2-4 {
+  position: absolute;
+  top: 2500px;
+  left: 850px; }
+
+#bg2-5 {
+  position: absolute;
+  top: 3300px;
+  left: 20px; }

@@ -1,0 +1,65 @@
+//SPIN EFFECT
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(-180deg);}
+    25% {-webkit-transform: rotate(360deg);}
+    50% {-webkit-transform: rotate(-90deg);}
+   100% { -webkit-transform: rotate(360deg); }
+
+}
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(-180deg);}
+    25% {-moz-transform: rotate(360deg);}
+    50% {-moz-transform: rotate(-90deg);}
+   100% { -moz-transform: rotate(360deg); }
+
+} 
+@-o-keyframes spin {
+    0% { -o-transform: rotate(-180deg);}
+    25% {-o-transform: rotate(360deg);}
+    50% {-o-transform: rotate(-90deg);}
+   100% { -o-transform: rotate(360deg); }
+
+} 
+@keyframes spin {
+    0% {transform: rotate(-180deg);}
+    25% {transform: rotate(360deg);}
+    50% {transform: rotate(-90deg);}
+   100% {transform: rotate(360deg); }
+
+} 
+//ANIMATED BACKGROUND
+@keyframes animatedBackground {
+	from { background-position: 0% 0%; }
+	to { background-position: 100% 0%; }
+}
+
+@-moz-keyframes animatedBackground {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 0%; }
+}
+
+
+@-o-keyframes animatedBackground {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 0%; }
+}
+
+
+//WAVES LINEAR
+/*@-webkit-keyframes waves-linear
+@-moz-keyframes waves-linear*/
+
+@-o-keyframes waves-linear {
+	0% {}
+	100% {-webkit-transform: translate3d(-56px, 0px, 0px);}
+}
+
+//WAVES 
+/*@-webkit-keyframes waves
+@-moz-keyframes waves*/
+
+@-o-keyframes waves {
+	0% {}
+	50% {-webkit-transform: translate3d(0px, 10px, 0px);}
+	100% {}
+}
