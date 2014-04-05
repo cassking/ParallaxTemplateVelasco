@@ -4,7 +4,6 @@ ParallaxTemplateVelasco
 Parallax template. Feel free to fork it and customize it as you wish.
 [Demo on github:](https://rawgithub.com/cassking/ParallaxTemplateVelasco/master/site/index.html)
 
-
 ## Norma Velasco Parallax v1.0
 
 _Author: Casssandra King, @ca55king, cassandraking.net_
