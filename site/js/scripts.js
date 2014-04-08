@@ -1,11 +1,11 @@
-$(document).ready(function() {
-    // Cache the Window object
-    $window = $(window);
+
+//this for the slide backgrounds
+    var $window = $(window);
 
     $('section[data-type="background"]').each(function() {
         var $bgobj = $(this); // assigning the object
 
-        $(window).scroll(function() {
+        $window.scroll(function() {
 
             // Scroll the background at var speed
             // the yPos is a negative value because we're scrolling it UP!                              
@@ -21,7 +21,8 @@ $(document).ready(function() {
 
     });
 
-});
+//this for the 'floating' swirls and the floating author circles
+//e stands for the event, e captures events
 $(window).bind('scroll', function(e) {
     parallaxScroll();
 });

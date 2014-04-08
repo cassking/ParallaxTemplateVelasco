@@ -4,4 +4,5 @@
 
 # cache
 .sass-cache
-
+:main.css
+../../:main.css
