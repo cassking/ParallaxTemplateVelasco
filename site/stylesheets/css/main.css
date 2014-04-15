@@ -443,12 +443,16 @@ h4 {
   color: #94a4a4;
   font-family: "Wellfleet", serif;
   font-size: 1.2em; }
+  h4:before {
+    content: '~ '; }
+  h4:after {
+    content: ' ~'; }
 
 p {
   padding: 18px;
   font-family: "GoudyBookletter", serif;
   font-size: 152%;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #333333; }
 
 .slide {
@@ -473,24 +477,28 @@ p {
   background-size: cover; }
 
 #slide5 {
-  background: url("../../img/slide2.jpg") 50% 0 no-repeat fixed;
+  background: url("../../img/slide2.jpg") 50% 0 repeat fixed;
   /*Responsive bg image*/
   background-size: cover; }
 
 #slide7 {
-  background: url("../../img/slide3.jpg") 50% 0 no-repeat fixed;
+  background: url("../../img/slide3.jpg") 50% 0 repeat fixed;
   /*Responsive bg image*/
   background-size: cover; }
 
 #slide9 {
-  background: url("../../img/slide4.jpg") 50% 0 no-repeat fixed;
+  background: url("../../img/slide4.jpg") 50% 0 repeat fixed;
   /*Responsive bg image*/
   background-size: cover; }
 
 #slide11 {
-  background: url("../../img/slide5.jpg") 50% 0 no-repeat fixed;
+  background: url("../../img/slide5.jpg") 50% 0 repeat fixed;
   /*Responsive bg image*/
   background-size: cover; }
+  #slide11 .story {
+    top: 10px; }
+    #slide11 .story p {
+      font-size: 132%; }
   #slide11.ico--circle:last {
     display: none; }
 
@@ -683,5 +691,5 @@ footer[role="contentinfo"] {
 
 #bg2-7 {
   position: absolute;
-  top: 5000px;
+  top: 4500px;
   left: 20px; }

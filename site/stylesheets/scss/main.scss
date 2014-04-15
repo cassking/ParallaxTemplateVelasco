@@ -172,14 +172,21 @@ h4 {
     color: $greydark;
     font-family:"Wellfleet", serif;
     font-size: 1.2em;
+    &:before {
+        content: '~ ';
+       }
+    &:after{
+    content: ' ~';
+   }
 }
+
 
 p {
     @extend %center-content;
     padding: 18px;
     font-family:"GoudyBookletter", serif;
     font-size: 152%;
-    line-height: 1.5;
+    line-height: 1.2;
     color: $greydarkest;
 }
 
@@ -209,33 +216,37 @@ p {
 
 }
 #slide5 {
-    background:  url("../../img/slide2.jpg") 50% 0 no-repeat fixed;
+    background:  url("../../img/slide2.jpg") 50% 0 repeat fixed;
     /*Responsive bg image*/
     background-size: cover;
 
 
 }
 #slide7 {
-    background:  url("../../img/slide3.jpg") 50% 0 no-repeat fixed;
+    background:  url("../../img/slide3.jpg") 50% 0 repeat fixed;
     /*Responsive bg image*/
     background-size: cover;
 
 }
 #slide9 {
-    background:  url("../../img/slide4.jpg") 50% 0 no-repeat fixed;
+    background:  url("../../img/slide4.jpg") 50% 0 repeat fixed;
     /*Responsive bg image*/
     background-size: cover;
 
 }
 #slide11 {
-    background:  url("../../img/slide5.jpg") 50% 0 no-repeat fixed;
+    background:  url("../../img/slide5.jpg") 50% 0 repeat fixed;
     /*Responsive bg image*/
     background-size: cover;
+    .story {
+        top: 10px;
+        p {
+            font-size: 132%;        }
+    }
 
      &.ico--circle:last {
         display: none;
     }
-
 }
 
 .intro, .story {
@@ -280,9 +291,9 @@ p {
       /*  border-top: 1px solid $greylight;*/
         @include mediumborderradius;
         background: $white;
-        @extend %center-content;
-       
+        @extend %center-content;  
     }
+
     h3, h4 {
         @extend %center-content;
         width: 40%;
@@ -463,6 +474,6 @@ footer[role="contentinfo"] {
 }
 #bg2-7 {
     position: absolute;
-    top: 5000px;
+    top: 4500px;
     left: 20px;
 }
