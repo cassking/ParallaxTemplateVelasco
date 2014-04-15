@@ -26,10 +26,4 @@ _Author: Casssandra King, @ca55king, cassandraking.net_
 2. JQuery
 3. Patterns
 4. HTML5
-5. 
-##IMPROVEMENTS COMING SOON INCLUDE:
-1. Skip to content link
-2. JQuery easing when navigating via the main navigation
-3. Media queries to accomodate responsive, 3 breakpoints: mobile, tablet, desktop
-4. Tweaking of CSS property order
  
