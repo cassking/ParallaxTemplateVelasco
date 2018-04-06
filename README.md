@@ -2,7 +2,12 @@ ParallaxTemplateVelasco
 =======================
 
 Parallax template. Feel free to fork it and customize it as you wish.
-[Demo on github:](https://rawgithub.com/cassking/ParallaxTemplateVelasco/master/site/index.html)
+
+
+DEMO
+-----------
+
+https://rawgithub.com/cassking/ParallaxTemplateVelasco/master/site/index.html
 
 ## Norma Velasco Parallax v1.0
 
